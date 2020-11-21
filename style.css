@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  background-image: url("./img/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 400;
+  color: #ffffff;
+  height: 252px;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+header .header-container {
+  padding-top: 50px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header .nav-logo-phone-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 12;
+      -ms-flex-positive: 12;
+          flex-grow: 12;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-logo-phone-container .logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .nav-logo-phone-container .nav {
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
+}
+
+header .nav-logo-phone-container .phone {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+}
+
+header .nav-logo-phone-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-logo-phone-container ul a {
+  margin-left: 5%;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
