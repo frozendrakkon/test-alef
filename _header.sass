@@ -22,7 +22,7 @@ header
         max-width: 1280px
         margin: 0 auto
         @media (max-width: 1199px)
-            padding: 3em 3em 0 3em
+            padding: 2em 3em 0 3em
         .nav-logo-phone-container
             display: flex
             flex-grow: 12
@@ -43,12 +43,9 @@ header
             @media (max-width: 400px)
                 display: block
         .desktop-nav
-            @media (max-width: 400px)
-                display: none
-        .mobile-nav
-            display: none
-            @media (max-width: 400px)
-                display: none
-        .phone
             @media (max-width: 600px)
                 display: none
+        .phone
+            @media (max-width: 400px)
+                padding-top: 1em
+                text-align: center

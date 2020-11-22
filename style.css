@@ -54,7 +54,7 @@ header .header-container {
 
 @media (max-width: 1199px) {
   header .header-container {
-    padding: 3em 3em 0 3em;
+    padding: 2em 3em 0 3em;
   }
 }
 
@@ -112,26 +112,51 @@ header .header-container .nav-logo-phone-container ul li {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   header .header-container .desktop-nav {
     display: none;
   }
 }
 
-header .header-container .mobile-nav {
-  display: none;
-}
-
 @media (max-width: 400px) {
-  header .header-container .mobile-nav {
-    display: none;
+  header .header-container .phone {
+    padding-top: 1em;
+    text-align: center;
   }
 }
 
-@media (max-width: 600px) {
-  header .header-container .phone {
-    display: none;
-  }
+main .main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+main .main-container .sort {
+  display: inline-block;
+}
+
+main .main-container button {
+  border: none;
+  font-size: 1em;
+  background-color: #ffffff;
+  margin: 2em 0 2em 2em;
+}
+
+main .main-container .cat1, main .main-container .cat2, main .main-container .cat3, main .main-container .cat4, main .main-container .cat5, main .main-container .cat6 {
+  height: 387px;
+  width: 264px;
+}
+
+main .main-container .cat1, main .main-container .cat4 {
+  background: url("./img/cat1.jpg");
+}
+
+main .main-container .cat2, main .main-container .cat5 {
+  background: url("./img/cat2.jpg");
+}
+
+main .main-container .cat3, main .main-container .cat6 {
+  background: url("./img/cat3.jpg");
 }
 
 a {
