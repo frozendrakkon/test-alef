@@ -41,7 +41,8 @@ header h1 {
 
 @media (max-width: 400px) {
   header h1 {
-    display: none;
+    font-size: 1.2em;
+    text-align: center;
   }
 }
 
@@ -119,13 +120,11 @@ header .header-container .nav-logo-phone-container ul li {
 
 header .header-container .mobile-nav {
   display: none;
-  text-align: center;
 }
 
 @media (max-width: 400px) {
   header .header-container .mobile-nav {
-    display: block;
-    padding-top: 4em;
+    display: none;
   }
 }
 
