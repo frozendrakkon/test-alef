@@ -133,30 +133,72 @@ main .main-container {
 
 main .main-container .sort {
   display: inline-block;
+  text-align: left;
 }
 
-main .main-container button {
+main .main-container #age, main .main-container #price {
   border: none;
   font-size: 1em;
   background-color: #ffffff;
   margin: 2em 0 2em 2em;
 }
 
-main .main-container .cat1, main .main-container .cat2, main .main-container .cat3, main .main-container .cat4, main .main-container .cat5, main .main-container .cat6 {
-  height: 387px;
-  width: 264px;
+main .cat-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-main .main-container .cat1, main .main-container .cat4 {
+main .cat-container div {
+  width: 33%;
+}
+
+main .cat-container .cat1, main .cat-container .cat4 {
   background: url("./img/cat1.jpg");
+  background-repeat: no-repeat;
 }
 
-main .main-container .cat2, main .main-container .cat5 {
+main .cat-container .cat2, main .cat-container .cat5 {
   background: url("./img/cat2.jpg");
 }
 
-main .main-container .cat3, main .main-container .cat6 {
+main .cat-container .cat3, main .cat-container .cat6 {
   background: url("./img/cat3.jpg");
+}
+
+main .cat-container .cat1, main .cat-container .cat2, main .cat-container .cat3, main .cat-container .cat4, main .cat-container .cat5, main .cat-container .cat6 {
+  padding: 3%;
+  height: 387px;
+  width: 33.3%;
+  background-repeat: no-repeat;
+}
+
+main div {
+  text-align: center;
+}
+
+main div .show-more {
+  font-size: 1em;
+  width: 380px;
+  height: 65px;
+  border: 1px solid #CACACA;
+  border-radius: 10%;
+  margin: 0 auto;
+}
+
+.sale {
+  width: 78px;
+  height: 39px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 20%;
+  text-align: center;
+  padding-top: 2.5%;
 }
 
 a {

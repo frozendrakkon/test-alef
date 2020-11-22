@@ -5,20 +5,36 @@ main
         font-weight: $normal
         .sort
             display: inline-block
-        button
+            text-align: left
+        #age,#price
             border: none
             font-size: 1em
             background-color: #ffffff
             margin: 2em 0 2em 2em
-            &:hover
-
-        input
-        .cat1, .cat2, .cat3, .cat4, .cat5, .cat6
-            height: 387px
-            width: 264px
+    .cat-container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        div
+            width: 33%
         .cat1, .cat4
             background: url("./img/cat1.jpg")
+            background-repeat: no-repeat
         .cat2, .cat5
             background: url("./img/cat2.jpg")
         .cat3, .cat6
             background: url("./img/cat3.jpg")
+        .cat1, .cat2, .cat3, .cat4, .cat5, .cat6
+            padding: 3%
+            height: 387px
+            width: 33.3%
+            background-repeat: no-repeat
+    div
+        text-align: center
+        .show-more
+            font-size: 1em
+            width: 380px
+            height: 65px
+            border: 1px solid #CACACA
+            border-radius: 10%
+            margin: 0 auto
