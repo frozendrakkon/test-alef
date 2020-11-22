@@ -21,17 +21,43 @@ header {
   height: 252px;
 }
 
+@media (max-width: 400px) {
+  header {
+    background-image: none;
+    background: #1F2021;
+  }
+}
+
 header h1 {
   font-weight: 700;
+  font-size: 2.5em;
+}
+
+@media (max-width: 550px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    display: none;
+  }
 }
 
 header .header-container {
-  padding-top: 50px;
+  padding-top: 3em;
   max-width: 1280px;
   margin: 0 auto;
 }
 
-header .nav-logo-phone-container {
+@media (max-width: 1199px) {
+  header .header-container {
+    padding: 3em 3em 0 3em;
+  }
+}
+
+header .header-container .nav-logo-phone-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,34 +72,67 @@ header .nav-logo-phone-container {
           align-items: center;
 }
 
-header .nav-logo-phone-container .logo {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+header .header-container .nav-logo-phone-container .logo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
-header .nav-logo-phone-container .nav {
-  -webkit-box-flex: 6;
-      -ms-flex-positive: 6;
-          flex-grow: 6;
+@media (max-width: 600px) {
+  header .header-container .nav-logo-phone-container .logo {
+    text-align: center;
+  }
 }
 
-header .nav-logo-phone-container .phone {
+header .header-container .nav-logo-phone-container .nav {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+}
+
+header .header-container .nav-logo-phone-container .phone {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-          flex-grow: 5;
 }
 
-header .nav-logo-phone-container ul {
+header .header-container .nav-logo-phone-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .nav-logo-phone-container ul a {
+header .header-container .nav-logo-phone-container ul li {
   margin-left: 5%;
+}
+
+@media (max-width: 400px) {
+  header .header-container .nav-logo-phone-container {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  header .header-container .desktop-nav {
+    display: none;
+  }
+}
+
+header .header-container .mobile-nav {
+  display: none;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  header .header-container .mobile-nav {
+    display: block;
+    padding-top: 4em;
+  }
+}
+
+@media (max-width: 600px) {
+  header .header-container .phone {
+    display: none;
+  }
 }
 
 a {

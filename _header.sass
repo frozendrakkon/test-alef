@@ -6,25 +6,50 @@ header
     font-weight: $normal
     color: #ffffff
     height: 252px
+    @media (max-width: 400px)
+        background-image: none
+        background: #1F2021
     h1
         font-weight: $bold
+        font-size: 2.5em
+        @media(max-width: 550px)
+            font-size: 1.5em
+        @media (max-width: 400px)
+            display: none
     .header-container
-        padding-top: 50px
+        padding-top: 3em
         max-width: 1280px
         margin: 0 auto
-    .nav-logo-phone-container
-        display: flex
-        flex-grow: 12
-        justify-content: space-between
-        align-items: center
-        .logo
-            flex-grow: 1
-        .nav
-            flex-grow: 6
-        .phone
-            align-self: flex-end
-            flex-grow: 5
-        ul
+        @media (max-width: 1199px)
+            padding: 3em 3em 0 3em
+        .nav-logo-phone-container
             display: flex
-            a
-                margin-left: 5%
+            flex-grow: 12
+            justify-content: space-between
+            align-items: center
+            .logo
+                flex-grow: 2
+                @media (max-width: 600px)
+                    text-align: center
+            .nav
+                flex-grow: 10
+            .phone
+                align-self: flex-end
+            ul
+                display: flex
+                li
+                    margin-left: 5%
+            @media (max-width: 400px)
+                display: block
+        .desktop-nav
+            @media (max-width: 400px)
+                display: none
+        .mobile-nav
+            display: none
+            text-align: center
+            @media (max-width: 400px)
+                display: block
+                padding-top: 4em
+        .phone
+            @media (max-width: 600px)
+                display: none
