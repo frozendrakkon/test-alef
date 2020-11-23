@@ -147,42 +147,41 @@ main .cat-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-main .cat-container div {
-  width: 33%;
+main .cat-container .about-cat-1, main .cat-container .about-cat-2, main .cat-container .about-cat-3, main .cat-container .about-cat-4, main .cat-container .about-cat-5, main .cat-container .about-cat-6, main .cat-container .about-cat-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .cat-container .cat1, main .cat-container .cat4 {
+main .cat-container .about-cat-1 p, main .cat-container .about-cat-2 p, main .cat-container .about-cat-3 p, main .cat-container .about-cat-4 p, main .cat-container .about-cat-5 p, main .cat-container .about-cat-6 p, main .cat-container .about-cat-7 p {
+  padding-left: 1%;
+}
+
+main .cat-container .image-cat-1, main .cat-container .image-cat-4 {
   background: url("./img/cat1.jpg");
-  background-repeat: no-repeat;
 }
 
-main .cat-container .cat2, main .cat-container .cat5 {
+main .cat-container .image-cat-2, main .cat-container .image-cat-5 {
   background: url("./img/cat2.jpg");
 }
 
-main .cat-container .cat3, main .cat-container .cat6 {
+main .cat-container .image-cat-3, main .cat-container .image-cat-6 {
   background: url("./img/cat3.jpg");
 }
 
-main .cat-container .cat1, main .cat-container .cat2, main .cat-container .cat3, main .cat-container .cat4, main .cat-container .cat5, main .cat-container .cat6 {
-  padding: 3%;
-  height: 387px;
-  width: 33.3%;
+main .cat-container .image-cat-1, main .cat-container .image-cat-4, main .cat-container .image-cat-2, main .cat-container .image-cat-5, main .cat-container .image-cat-3, main .cat-container .image-cat-6 {
   background-repeat: no-repeat;
+  height: 264px;
 }
 
-main div {
-  text-align: center;
-}
-
-main div .show-more {
+main .cat-container .show-more {
   font-size: 1em;
   width: 380px;
   height: 65px;
