@@ -14,11 +14,27 @@ main
     .cat-container
         display: flex
         flex-wrap: wrap
-        .about-cat-1, .about-cat-2, .about-cat-3, .about-cat-4, .about-cat-5, .about-cat-6, .about-cat-7
+        justify-content: space-between
+        .cat-1, .cat-2, .cat-3, .cat-4, .cat-5, .cat-6, #age, #price
+            background-color: #F3F3F3
+            margin: 5% auto
+            button
+                @extend %button-buy
+                background-color: #6EBBD3
+                border: none
+                font-weight: $bold
+            .sold-out
+                background-color: #1F2021
+                color: #ffffff
+        .about-cat-1, .about-cat-2, .about-cat-3, .about-cat-4, .about-cat-5, .about-cat-6
             display: flex
             align-items: center
+            text-align: left
             p
-                padding-left: 1%
+                padding-left: 3%
+                width: 33%
+            .color
+                border-left: 4px solid #6EBBD3
         .image-cat-1, .image-cat-4
             background: url("./img/cat1.jpg")
         .image-cat-2, .image-cat-5
@@ -28,10 +44,15 @@ main
         .image-cat-1 ,.image-cat-4 ,.image-cat-2 ,.image-cat-5 ,.image-cat-3,.image-cat-6
             background-repeat: no-repeat
             height: 264px
+
+        .price, #price
+            display: block
+            font-size: 1.3em
+            margin-left: 5%
         .show-more
             font-size: 1em
             width: 380px
             height: 65px
             border: 1px solid #CACACA
             border-radius: 10%
-            margin: 0 auto
+            margin: 5% auto

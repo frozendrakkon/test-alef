@@ -12,6 +12,13 @@
   text-decoration: none;
 }
 
+main .cat-container .cat-1 button, main .cat-container .cat-2 button, main .cat-container .cat-3 button, main .cat-container .cat-4 button, main .cat-container .cat-5 button, main .cat-container .cat-6 button, main .cat-container #age button, main .cat-container #price button {
+  height: 65px;
+  width: 380px;
+  border-radius: 0 0 10% 10%;
+  text-align: center;
+}
+
 header {
   background-image: url("./img/header-bg.png");
   background-repeat: no-repeat;
@@ -149,19 +156,44 @@ main .cat-container {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main .cat-container .about-cat-1, main .cat-container .about-cat-2, main .cat-container .about-cat-3, main .cat-container .about-cat-4, main .cat-container .about-cat-5, main .cat-container .about-cat-6, main .cat-container .about-cat-7 {
+main .cat-container .cat-1, main .cat-container .cat-2, main .cat-container .cat-3, main .cat-container .cat-4, main .cat-container .cat-5, main .cat-container .cat-6, main .cat-container #age, main .cat-container #price {
+  background-color: #F3F3F3;
+  margin: 5% auto;
+}
+
+main .cat-container .cat-1 button, main .cat-container .cat-2 button, main .cat-container .cat-3 button, main .cat-container .cat-4 button, main .cat-container .cat-5 button, main .cat-container .cat-6 button, main .cat-container #age button, main .cat-container #price button {
+  background-color: #6EBBD3;
+  border: none;
+  font-weight: 700;
+}
+
+main .cat-container .cat-1 .sold-out, main .cat-container .cat-2 .sold-out, main .cat-container .cat-3 .sold-out, main .cat-container .cat-4 .sold-out, main .cat-container .cat-5 .sold-out, main .cat-container .cat-6 .sold-out, main .cat-container #age .sold-out, main .cat-container #price .sold-out {
+  background-color: #1F2021;
+  color: #ffffff;
+}
+
+main .cat-container .about-cat-1, main .cat-container .about-cat-2, main .cat-container .about-cat-3, main .cat-container .about-cat-4, main .cat-container .about-cat-5, main .cat-container .about-cat-6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
 }
 
-main .cat-container .about-cat-1 p, main .cat-container .about-cat-2 p, main .cat-container .about-cat-3 p, main .cat-container .about-cat-4 p, main .cat-container .about-cat-5 p, main .cat-container .about-cat-6 p, main .cat-container .about-cat-7 p {
-  padding-left: 1%;
+main .cat-container .about-cat-1 p, main .cat-container .about-cat-2 p, main .cat-container .about-cat-3 p, main .cat-container .about-cat-4 p, main .cat-container .about-cat-5 p, main .cat-container .about-cat-6 p {
+  padding-left: 3%;
+  width: 33%;
+}
+
+main .cat-container .about-cat-1 .color, main .cat-container .about-cat-2 .color, main .cat-container .about-cat-3 .color, main .cat-container .about-cat-4 .color, main .cat-container .about-cat-5 .color, main .cat-container .about-cat-6 .color {
+  border-left: 4px solid #6EBBD3;
 }
 
 main .cat-container .image-cat-1, main .cat-container .image-cat-4 {
@@ -181,13 +213,19 @@ main .cat-container .image-cat-1, main .cat-container .image-cat-4, main .cat-co
   height: 264px;
 }
 
+main .cat-container .price, main .cat-container #price {
+  display: block;
+  font-size: 1.3em;
+  margin-left: 5%;
+}
+
 main .cat-container .show-more {
   font-size: 1em;
   width: 380px;
   height: 65px;
   border: 1px solid #CACACA;
   border-radius: 10%;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 
 .sale {
