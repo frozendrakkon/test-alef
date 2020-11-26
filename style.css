@@ -139,7 +139,6 @@ main .main-container {
 }
 
 main .main-container .sort {
-  display: inline-block;
   text-align: left;
 }
 
@@ -154,9 +153,6 @@ main .cat-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -166,7 +162,7 @@ main .cat-container {
 
 main .cat-container .cat-1, main .cat-container .cat-2, main .cat-container .cat-3, main .cat-container .cat-4, main .cat-container .cat-5, main .cat-container .cat-6, main .cat-container #age, main .cat-container #price {
   background-color: #F3F3F3;
-  margin: 5% auto;
+  margin: 0 0 5% 0;
 }
 
 main .cat-container .cat-1 button, main .cat-container .cat-2 button, main .cat-container .cat-3 button, main .cat-container .cat-4 button, main .cat-container .cat-5 button, main .cat-container .cat-6 button, main .cat-container #age button, main .cat-container #price button {
@@ -231,6 +227,15 @@ main .cat-container .show-more {
   margin: 5% auto;
 }
 
+main .cat-container .up-button {
+  height: 59px;
+  width: 59px;
+  background-color: #6EBBD3;
+  margin-top: 10%;
+  float: right;
+  border: none;
+}
+
 .sale {
   width: 78px;
   height: 39px;
@@ -239,6 +244,27 @@ main .cat-container .show-more {
   border-radius: 20%;
   text-align: center;
   padding-top: 2.5%;
+}
+
+footer {
+  background-color: #1F2021;
+  color: #ffffff;
+}
+
+footer button {
+  height: 65px;
+  background-color: #6EBBD3;
+  font-weight: 700;
+  width: 250px;
+  border-radius: 0 0 10% 10%;
+  text-align: center;
+}
+
+footer input {
+  height: 65px;
+  width: 300px;
+  padding-left: 1%;
+  border-radius: 0 0 10% 10%;
 }
 
 a {

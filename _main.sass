@@ -4,7 +4,6 @@ main
         margin: 0 auto
         font-weight: $normal
         .sort
-            display: inline-block
             text-align: left
         #age,#price
             border: none
@@ -13,12 +12,11 @@ main
             margin: 2em 0 2em 2em
     .cat-container
         display: flex
-        justify-content: space-between
         flex-wrap: wrap
         justify-content: space-between
         .cat-1, .cat-2, .cat-3, .cat-4, .cat-5, .cat-6, #age, #price
             background-color: #F3F3F3
-            margin: 5% auto
+            margin: 0 0 5% 0
             button
                 @extend %button-buy
                 background-color: #6EBBD3
@@ -57,3 +55,10 @@ main
             border: 1px solid #CACACA
             border-radius: 10%
             margin: 5% auto
+        .up-button
+            height: 59px
+            width: 59px
+            background-color: #6EBBD3
+            margin-top: 10%
+            float: right
+            border: none
