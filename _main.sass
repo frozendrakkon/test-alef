@@ -15,6 +15,7 @@ main
         flex-wrap: wrap
         justify-content: space-between
         .cat-1, .cat-2, .cat-3, .cat-4, .cat-5, .cat-6, #age, #price
+            justify-content: space-between
             background-color: #F3F3F3
             margin: 0 0 5% 0
             button
@@ -25,10 +26,12 @@ main
             .sold-out
                 background-color: #1F2021
                 color: #ffffff
+            b
+                margin: 0 0 0 5%
         .about-cat-1, .about-cat-2, .about-cat-3, .about-cat-4, .about-cat-5, .about-cat-6
             display: flex
-            align-items: center
             text-align: left
+            margin: 2% 0 0 5%
             p
                 padding-left: 3%
                 width: 33%
@@ -47,7 +50,7 @@ main
         .price, #price
             display: block
             font-size: 1.3em
-            margin-left: 5%
+            margin: 5% 0 5% 5%
         .show-more
             font-size: 1em
             width: 380px
@@ -59,6 +62,10 @@ main
             height: 59px
             width: 59px
             background-color: #6EBBD3
-            margin-top: 10%
-            float: right
             border: none
+            position: fixed
+            right: 20%
+            bottom: 40%
+            display: none
+        .up-button-show
+            display: block
